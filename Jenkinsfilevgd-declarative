@@ -12,7 +12,7 @@ triggers {
 }
 
 triggers {
-  cron ('* * * * *')
+ //cron ('* * * * *')
 }
 
 options {
