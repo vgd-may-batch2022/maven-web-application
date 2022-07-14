@@ -7,6 +7,20 @@ tools{
 maven "maven3.8.5"
 }
 
+triggers {
+  pollSCM ('* * * * *')
+}
+
+triggers {
+  cron ('* * * * *')
+}
+
+options {
+  timestamps
+}
+
+
+
 stages{
    //Get the code from GitHub
    stage('CheckoutCode'){
